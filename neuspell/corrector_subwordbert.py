@@ -6,12 +6,12 @@ import numpy as np
 import torch
 from pytorch_pretrained_bert import BertAdam
 
-from .commons import DEFAULT_TRAINTEST_DATA_PATH
-from .corrector import Corrector
-from .seq_modeling.helpers import bert_tokenize_for_valid_examples
-from .seq_modeling.helpers import load_data, load_vocab_dict, save_vocab_dict
-from .seq_modeling.helpers import train_validation_split, batch_iter, labelize, progressBar, batch_accuracy_func
-from .seq_modeling.subwordbert import load_model, load_pretrained, model_predictions, model_inference
+from commons import DEFAULT_TRAINTEST_DATA_PATH
+from corrector import Corrector
+from seq_modeling.helpers import bert_tokenize_for_valid_examples
+from seq_modeling.helpers import load_data, load_vocab_dict, save_vocab_dict
+from seq_modeling.helpers import train_validation_split, batch_iter, labelize, progressBar, batch_accuracy_func
+from seq_modeling.subwordbert import load_model, load_pretrained, model_predictions, model_inference
 
 """ corrector module """
 

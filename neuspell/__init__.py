@@ -1,17 +1,23 @@
 __version__ = "1.0.0"
 __author__ = 'Sai Muralidhar Jayanthi, Danish Pruthi, and Graham Neubig'
 __email__ = "jsaimurali001@gmail.com"
+import sys
 
-from . import seq_modeling
-from . import off_the_shelf
-from .corrector_bertsclstm import BertsclstmChecker
-from .corrector_cnnlstm import CnnlstmChecker
-from .corrector_lstmlstm import NestedlstmChecker
-from .corrector_sclstm import SclstmChecker
-from .corrector_sclstmbert import SclstmbertChecker
-from .corrector_subwordbert import BertChecker
-from .off_the_shelf import *
-from .util import is_module_available
+sys.path.append(r'D:\Users\Hyperbook\DeepLearning\neuspell\neuspell')
+import seq_modeling
+import off_the_shelf
+
+from commons import ALLENNLP_ELMO_PRETRAINED_FOLDER
+
+from corrector_bertsclstm import BertsclstmChecker
+from corrector_cnnlstm import CnnlstmChecker
+from corrector_lstmlstm import NestedlstmChecker
+from corrector_sclstm import SclstmChecker
+from corrector_sclstmbert import SclstmbertChecker
+from corrector_subwordbert import BertChecker
+sys.path.append(r'D:\Users\Hyperbook\DeepLearning\neuspell\neuspell\seq_modeling')
+from off_the_shelf import *
+from util import is_module_available
 
 __all__ = []
 __all__.extend(["seq_modeling"])
@@ -87,3 +93,7 @@ class CheckersFactory:
 
 
 __all__.extend(["CheckersFactory"])
+
+
+def commons():
+    return None

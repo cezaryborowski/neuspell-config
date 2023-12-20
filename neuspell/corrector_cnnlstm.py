@@ -1,9 +1,9 @@
 from typing import List
 
-from .commons import spacy_tokenizer
-from .corrector import Corrector
-from .seq_modeling.cnnlstm import load_model, load_pretrained, model_predictions, model_inference
-from .seq_modeling.helpers import load_data
+from commons import spacy_tokenizer
+from corrector import Corrector
+from seq_modeling.cnnlstm import load_model, load_pretrained, model_predictions, model_inference
+from seq_modeling.helpers import load_data
 
 """ corrector module """
 

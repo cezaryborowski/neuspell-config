@@ -2,9 +2,9 @@
 USAGE
 -----
 for gpu (+- cpu) testing:
->>> CUDA_VISIBLE_DEVICES=0 python test_neuspell_correctors.py
+->>> CUDA_VISIBLE_DEVICES=0 python test_neuspell_correctors.py
 for cpu-only testing:
->>> python test_neuspell_correctors.py
+-->>> python test_neuspell_correctors.py
 -----
 """
 
@@ -13,6 +13,8 @@ import logging
 import neuspell
 from neuspell import CnnlstmChecker, BertsclstmChecker, NestedlstmChecker, SclstmbertChecker, BertChecker, SclstmChecker
 from neuspell.seq_modeling.util import is_module_available
+
+
 
 # from neuspell import AspellChecker, JamspellChecker
 

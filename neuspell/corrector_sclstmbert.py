@@ -1,9 +1,9 @@
 from typing import List
 
-from .corrector import Corrector
-from .seq_modeling.helpers import bert_tokenize_for_valid_examples
-from .seq_modeling.helpers import load_data
-from .seq_modeling.sclstmbert import load_model, load_pretrained, model_predictions, model_inference
+from corrector import Corrector
+from seq_modeling.helpers import bert_tokenize_for_valid_examples
+from seq_modeling.helpers import load_data
+from seq_modeling.sclstmbert import load_model, load_pretrained, model_predictions, model_inference
 
 """ corrector module """
 

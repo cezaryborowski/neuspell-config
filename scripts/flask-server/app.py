@@ -140,7 +140,7 @@ def preload_models():
         # "cnn-rnn": CnnlstmChecker(pretrained=True),
         # "sc-rnn": SclstmChecker(tokenize=TOKENIZE, pretrained=True),
         # "nested-rnn": NestedlstmChecker(pretrained=True),
-        "bert": BertChecker(tokenize=TOKENIZE, pretrained=True),
+        #"bert": BertChecker(tokenize=TOKENIZE, pretrained=True),
         # "elmosc-rnn": ElmosclstmChecker(tokenize=TOKENIZE, pretrained=True),
         # "scrnn-elmo": SclstmelmoChecker(pretrained=True),
         # "bertsc-rnn": BertsclstmChecker(pretrained=True),
